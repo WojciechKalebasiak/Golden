@@ -1,6 +1,7 @@
 $(function() {
-    //*******************************************Animating header*******************************************
+    //Init Animate on Scroll efects
     AOS.init();
+    // Animating header
     $('body').hide();
     $('.tellmemore').hide();
     setTimeout(function() {
