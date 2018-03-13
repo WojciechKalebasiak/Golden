@@ -1,0 +1,68 @@
+.aboutus {
+    .container {
+        margin-top: 12%;
+        .periods {
+            max-width: 300px;
+            display: inline-block;
+            h4 {
+                font-family: $primaryfont;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            .date {
+                text-transform: uppercase;
+            }
+            .title {
+                text-transform: capitalize;
+                margin-bottom: 5%;
+            }
+            p {
+                font-family: $secondaryfont;
+                font-size: .8em;
+                color: $secondarycolor;
+            }
+        }
+        img {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 6%;
+            transition: all .3s ease-out;
+            @include mq(md) {
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .row {
+        margin-top: 10%;
+        @include mq(sm) {
+            margin-top: 20%;
+        }
+    }
+    .story-continues {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 7px solid #F1F1F1;
+        background-color: $primarycolor;
+        margin: 0 auto;
+        transition: all .3s ease-out;
+        span {
+            display: inline-block;
+            margin-top: 20%;
+            text-transform: uppercase;
+            font-family: $primaryfont;
+            font-weight: bold;
+            color: white;
+        }
+        @include mq(md) {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        @include mq(sm) {
+            margin-top: 20%;
+        }
+    }
+}

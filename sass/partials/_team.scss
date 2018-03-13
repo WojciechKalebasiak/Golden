@@ -1,0 +1,54 @@
+.team {
+    background-color: #f9f9f9;
+    .placeholder {
+        width: 230px;
+        height: 230px;
+        background-color: #000;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .row {
+        margin-top: 10%;
+    }
+    .person {
+        @include mq(sm) {
+            margin-top: 10%;
+        }
+    }
+    .employee {
+        margin-top: 15%;
+        @include mq(sm) {
+            margin-top: 5%;
+        }
+        h4 {
+            font-family: $primaryfont;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        h5 {
+            font-family: $secondaryfont;
+            font-size: .8em;
+            color: $secondarycolor;
+        }
+        .social-media {
+            display: inline-block;
+            margin-top: 5%;
+            width: 100%;
+            @include mq(sm) {
+                margin-top: 2%;
+            }
+        }
+    }
+    .teamfooter {
+        margin-top: 7%;
+        text-align: center;
+        p {
+            color: $secondarycolor;
+            font-family: $primaryfont;
+            font-size: 1.2em;
+        }
+        @include mq(sm) {
+            padding: 0 3%;
+        }
+    }
+}

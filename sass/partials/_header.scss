@@ -1,0 +1,70 @@
+header {
+    background: url("../images/Background.jpg") center/cover;
+    height: 100vh;
+    .wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    button {
+        &:focus {
+            outline: none;
+        }
+    }
+    .nav-li {
+        font-family: $primaryfont;
+        font-size: 1em;
+        color: white;
+        transition: color .5s ease-out;
+        text-transform: uppercase;
+        @include mq(md) {
+            &:hover {
+                color: $primarycolor;
+            }
+        }
+    }
+    .brand-name {
+        font-family: $logofont;
+        color: $primarycolor;
+    }
+    .hjumbotron {
+        margin-top: 35vh;
+        padding-bottom: 160px;
+        @include mq(sm) {
+            margin-top: 20vh;
+        }
+        h2 {
+            font-style: italic;
+            font-family: "Merriweather", serif;
+            font-size: 2.5em;
+            color: white;
+            @include mq(sm) {
+                font-size: 1.5em;
+            }
+        }
+        h1 {
+            font-family: $primaryfont;
+            font-weight: bold;
+            font-size: 4.6875em;
+            color: white;
+            @include mq(sm) {
+                font-size: 2.2em;
+            }
+        }
+        .tellmemore {
+            font-family: $primaryfont;
+            font-size: 1.2em;
+            padding: 1em 2.5em;
+            background-color: $primarycolor;
+            border: none;
+            color: white;
+            font-weight: bold;
+            transition: all .3s ease-out;
+            @include mq(md) {
+                &:hover {
+                    background-color: white;
+                    color: $primarycolor
+                }
+            }
+        }
+    }
+}

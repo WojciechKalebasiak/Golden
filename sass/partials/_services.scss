@@ -1,0 +1,26 @@
+.services {
+    .services-container {
+        margin-top: 10%;
+        img {
+            padding: 20px 20px;
+            border: 3.5px solid $primarycolor;
+            border-radius: 50%;
+            margin-bottom: 1.5em;
+        }
+        .locked {
+            padding: 20px 30px;
+            margin-bottom: 1.2em;
+        }
+        h5 {
+            font-weight: bold;
+            font-family: $primaryfont;
+            font-size: 1.2em;
+            margin-bottom: 5%;
+        }
+        p {
+            font-family: $secondaryfont;
+            font-size: .8em;
+            color: $secondarycolor;
+        }
+    }
+}

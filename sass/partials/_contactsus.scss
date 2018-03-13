@@ -1,0 +1,55 @@
+.contactus {
+    background: url("../images/contactusbgc.jpg") center/cover;
+    .section-title {
+        color: white;
+    }
+    .container {
+        margin-top: 7%;
+    }
+    .input-row {
+        margin-top: 5%;
+    }
+    input {
+        border-radius: 0;
+        &:focus {
+            border-color: $primarycolor;
+            box-shadow: 0 0 5px $primarycolor;
+        }
+    }
+    textarea {
+        margin-top: 5%;
+        height: 91%;
+        border-radius: 0;
+        &:focus {
+            border-color: $primarycolor;
+            box-shadow: 0 0 5px $primarycolor;
+        }
+        ::placeholder {
+            font-size: 2em;
+            text-transform: uppercase;
+            color: #fff000;
+        }
+    }
+    button {
+        text-transform: uppercase;
+        font-family: $primaryfont;
+        font-size: 1.2em;
+        padding: 1em 3.5em;
+        background-color: $primarycolor;
+        border: none;
+        color: white;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-top: 3.5%;
+        transition: all .3s ease-out;
+        @include mq(md) {
+            &:hover {
+                background-color: white;
+                color: $primarycolor;
+            }
+        }
+        @include mq(sm) {
+            margin-top: 8%;
+        }
+    }
+}
