@@ -1,8 +1,6 @@
 $(function() {
     //Init Animate on Scroll efects
-    AOS.init({
-    	disable:'mobile'
-    });
+    AOS.init();
     // Animating header
     $('body').hide();
     $('.tellmemore').hide();
